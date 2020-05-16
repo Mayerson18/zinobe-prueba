@@ -1,5 +1,3 @@
-# From https://zeit.co/docs/examples/create-react-app
-
 # Use Node.js version 10
 FROM mhart/alpine-node:10
 

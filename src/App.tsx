@@ -20,6 +20,7 @@ const EXAMPLE_NAMES = Object.keys(EXAMPLES) as Examples[];
 const App = () => {
   // Use state to keep track of the current displayed example component
   const [example, setExample] = React.useState<Examples>("Counter");
+  const base = process.env.REACT_APP_BANK_BASE_CAPITAL;
 
   // The currently selected example component that should be rendered
   const ExampleComponent = EXAMPLES[example];
@@ -31,6 +32,7 @@ const App = () => {
       onClick={() => setExample(name)}
       className={name === example ? "active" : ""}
     >
+      <pre>{base}</pre>
       &lt;
       {name} /&gt;
     </button>
