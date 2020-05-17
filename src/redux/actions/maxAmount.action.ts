@@ -1,0 +1,1 @@
+export const EDIT_MAX_AMOUNT = 'EDIT_MAX_AMOUNT';

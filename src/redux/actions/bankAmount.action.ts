@@ -1,0 +1,1 @@
+export const EDIT_BANK_AMOUNT = 'EDIT_BANK_AMOUNT';

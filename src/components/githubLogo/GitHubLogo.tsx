@@ -3,7 +3,7 @@ import * as React from "react";
 const GitHubLogo = () => {
   return (
     <a
-      href="https://github.com/skovy/react-hooks-typescript-example"
+      href="https://github.com/Mayerson18/zinobe-prueba"
       className="github-corner"
       aria-label="View source on GitHub"
     >

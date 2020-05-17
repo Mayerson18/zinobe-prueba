@@ -1,0 +1,1 @@
+export const EDIT_MIN_AMOUNT = 'EDIT_MIN_AMOUNT';

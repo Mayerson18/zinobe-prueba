@@ -4,7 +4,7 @@ import "./Title.css";
 const Title = () => {
   return (
     <div className="title">
-      <h1>React Hooks TypeScript</h1>
+      <h1>Zinobe</h1>
     </div>
   );
 };

@@ -4,6 +4,6 @@
 - Instalación de depencias `yarn install o npm install`
 - Inicializar proyecto `yarn start o npm start`
 
-El .env esta ignorado crear uno con estas variables
+El .env esta ignorado, crear uno con estas variables: 
 
 - REACT_APP_BANK_BASE_CAPITAL=10000
