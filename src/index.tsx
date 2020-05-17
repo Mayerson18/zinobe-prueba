@@ -5,11 +5,14 @@ import {Provider} from 'react-redux';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import store from './redux/store';
+import { ModalProvider } from "react-modal-hook";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <ModalProvider>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </ModalProvider>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();

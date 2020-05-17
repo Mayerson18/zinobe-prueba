@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { defaultState } from "./redux/state";
+import { defaultState } from "../../redux/state";
 
-const CounterReducer = () => {
+const Home = () => {
   const bankAmount = useSelector((store: defaultState) => store.bankAmount);
   const dispatch = useDispatch();
   return (
@@ -12,4 +12,4 @@ const CounterReducer = () => {
   );
 };
 
-export default CounterReducer;
+export default Home;

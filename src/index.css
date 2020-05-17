@@ -37,7 +37,8 @@ button + button {
 button:hover,
 button:focus,
 button.active {
-  background-color: #f353d0;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.5);
+  background-color: #444444;
 }
 
 .github-corner:hover .octo-arm {

@@ -1,23 +1,25 @@
+.pages-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .container {
+  padding: 0 10%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
-.app {
-  text-align: center;
-  padding: 32px;
-  border-radius: 8px;
+.box-container {
+  cursor: pointer;
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.5);
   background-color: #444444;
-  min-width: 600px;
-}
-
-.separator {
-  margin: 16px 0;
-  height: 4px;
-  border-radius: 2px;
-  width: 100%;
-  background-color: #f353d0;
+  width: 20%;
+  height: 20vh;
+  border-radius: 5%;
+  text-align: center;
+  margin-top: 1em;
+  padding-top: 1em;
 }

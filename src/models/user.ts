@@ -6,6 +6,6 @@ export interface User {
     amount: number,
     dateToPay: Date,
     statusPayCredit: boolean,
-    status: boolean,
+    statusCredit: boolean,
     active: boolean
 }

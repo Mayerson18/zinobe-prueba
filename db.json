@@ -8,14 +8,16 @@
             "amount": 10000,
             "dateToPay": "24-12-2020",
             "statusPayCredit": false,
-            "status": false
+            "statusCredit": false
         }
     ],
     "credits": [
         {
             "id": "1",
             "status": 0,
+            "reason": "",
             "userId": "1",
+            "createdAt": "24-12-2020",
             "amount": 1000
         }
     ]
