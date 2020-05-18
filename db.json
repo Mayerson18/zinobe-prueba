@@ -1,24 +1,32 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "name": "Mayerson",
-            "email": "mayerson18@gmail.com",
-            "document": "1094835231",
-            "amount": 10000,
-            "dateToPay": "24-12-2020",
-            "statusPayCredit": false,
-            "statusCredit": false
-        }
-    ],
-    "credits": [
-        {
-            "id": "1",
-            "status": 0,
-            "reason": "",
-            "userId": "1",
-            "createdAt": "24-12-2020",
-            "amount": 1000
-        }
-    ]
+  "users": [
+    {
+      "name": "Mayerson Julio Jiménez Contreras",
+      "email": "mayersonjimenez@aol.com",
+      "document": "1094835231",
+      "id": 1
+    }
+  ],
+  "credits": [
+    {
+      "amount": 10000,
+      "status": true,
+      "createdAt": "2020-05-17T22:56:00.109Z",
+      "userId": 1,
+      "dateToPay": "2020-05-17T22:52:43.463Z",
+      "statusPayCredit": false,
+      "reason": "aprobada",
+      "id": 1
+    },
+    {
+      "amount": 10000,
+      "status": false,
+      "createdAt": "2020-05-17T22:56:25.570Z",
+      "userId": 1,
+      "dateToPay": "2020-05-17T22:52:43.463Z",
+      "statusPayCredit": false,
+      "reason": "Este usuario no puede solicitar creditos",
+      "id": 2
+    }
+  ]
 }

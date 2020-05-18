@@ -3,9 +3,11 @@ export interface User {
     name: string,
     email: string,
     document: string,
-    amount: number,
-    dateToPay: Date,
-    statusPayCredit: boolean,
-    statusCredit: boolean,
     active: boolean
+}
+
+export interface UserData {
+    name: string,
+    email: string,
+    document: string
 }

@@ -1,3 +1,11 @@
+.react-calendar {
+    background-color: #444444;
+}
+
+.ReactModal__Content {
+    background-color: transparent!important;
+}
+
 .Box{
     width: 300px;
     padding: 40px;
@@ -20,7 +28,7 @@
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #03A9F4;
+    border: 2px solid black;
     padding: 14px 10px;
     width: 200px;
     outline: none;

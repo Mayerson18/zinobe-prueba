@@ -5,6 +5,12 @@ export const bankAmountReducer = (state = initialState.bankAmount, action: Actio
     switch (action.type) {
       case "EDIT_BANK_AMOUNT":
         return action.value;
+      case "DECREMENT_BANK_AMOUNT":
+        let amount = 0;
+        if (state) {
+          amount = parseInt(state);
+        }
+        return (amount - action.value);
       default:
         return state;
     }

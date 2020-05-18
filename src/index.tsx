@@ -8,11 +8,11 @@ import store from './redux/store';
 import { ModalProvider } from "react-modal-hook";
 
 ReactDOM.render(
-  <ModalProvider>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </ModalProvider>,
+  <Provider store={store}>
+    <ModalProvider>
+        <App />
+    </ModalProvider>
+  </Provider>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();

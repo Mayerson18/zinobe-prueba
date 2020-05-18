@@ -1,9 +1,20 @@
 export interface Credit {
     id: string,
-    userId: string,
-    amount: number,
-    reason: string,
     status: boolean,
+    reason: string,
+    userId: string,
     createdAt: Date,
-    active: boolean
+    dateToPay: Date,
+    statusPayCredit: boolean,
+    amount: number
+}
+
+export interface CreditData {
+    status: boolean,
+    reason: string,
+    userId: string,
+    createdAt: Date,
+    dateToPay: Date,
+    statusPayCredit: boolean,
+    amount: number
 }

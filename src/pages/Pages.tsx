@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 
 const Pages = () => {
-
   return (
     <>
       <div className="container">

@@ -1,14 +1,30 @@
 import * as React from "react";
-import { FaUser } from 'react-icons/fa';
+import { FaUser, FaTimes } from 'react-icons/fa';
 import ReactModal from "react-modal";
 import { useModal } from "react-modal-hook";
 import AddUser from "./addUser";
+import {
+  Link
+} from "react-router-dom";
 
 const Users = () => {
   const [showModal, hideModal] = useModal(() => (
     <ReactModal isOpen>
       <AddUser/>
-      <button onClick={hideModal}>Salir</button>
+      <div 
+        style={{
+          cursor: 'pointer',
+          backgroundColor: '#444444',
+          width: '30px',
+          height: '30px',
+          borderRadius: '25px',
+          position: 'relative',
+          left: '65%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      onClick={hideModal}><FaTimes /> </div>
     </ReactModal>
   ));
   return (
@@ -18,8 +34,9 @@ const Users = () => {
           <div className="box-container" onClick={showModal}>
             <h3> Crear Usuario <FaUser /> </h3>
           </div>
+          
           <div className="box-container">
-            <h3> Lista de Usuarios <FaUser /> </h3>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/list-users"><h3> Lista de usuarios <FaUser /> </h3></Link>
           </div>
         </div>
       </div>
