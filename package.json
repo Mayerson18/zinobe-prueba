@@ -38,6 +38,7 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "start:all": "json-server --watch db.json & npm run start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
