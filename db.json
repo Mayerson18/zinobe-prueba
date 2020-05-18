@@ -1,32 +1,4 @@
 {
-  "users": [
-    {
-      "name": "Mayerson Julio Jiménez Contreras",
-      "email": "mayersonjimenez@aol.com",
-      "document": "1094835231",
-      "id": 1
-    }
-  ],
-  "credits": [
-    {
-      "amount": 10000,
-      "status": true,
-      "createdAt": "2020-05-17T22:56:00.109Z",
-      "userId": 1,
-      "dateToPay": "2020-05-17T22:52:43.463Z",
-      "statusPayCredit": false,
-      "reason": "aprobada",
-      "id": 1
-    },
-    {
-      "amount": 10000,
-      "status": false,
-      "createdAt": "2020-05-17T22:56:25.570Z",
-      "userId": 1,
-      "dateToPay": "2020-05-17T22:52:43.463Z",
-      "statusPayCredit": false,
-      "reason": "Este usuario no puede solicitar creditos",
-      "id": 2
-    }
-  ]
+  "users": [],
+  "credits": []
 }

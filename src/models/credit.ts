@@ -18,3 +18,13 @@ export interface CreditData {
     statusPayCredit: boolean,
     amount: number
 }
+
+export interface updateCreditSchema {
+    status?: boolean,
+    reason?: string,
+    userId?: string,
+    createdAt?: Date,
+    dateToPay?: Date,
+    statusPayCredit?: boolean,
+    amount?: number
+}

@@ -1,0 +1,12 @@
+.my-modal {
+    width: 90vw;
+    max-width: 90vw;
+}
+
+.tr{
+    cursor: pointer;
+}
+
+.tr:hover {
+    background-color: gray;
+}

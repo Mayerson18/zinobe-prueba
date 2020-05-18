@@ -26,10 +26,8 @@ const AddUser = () => {
     if (range <= AMOUNT_MAX && range >= AMOUNT_MIN) {
       let foundUser;
       try {
-        console.log('try :>> ');
         foundUser = await getUser(data.document);  
       } catch (error) {
-        
         console.log('error :>> ', error);
       }
       if (foundUser && foundUser.data && foundUser.data.length > 0 ) {
@@ -73,6 +71,7 @@ const AddUser = () => {
   const CreateCredit = (user: User, statusCredit: boolean) => {
     if (statusCredit) {
       ToastsStore.success("El credito ha sido aprobado");
+      dispatch({type: 'DECREMENT_BANK_AMOUNT', value: range}); // Actualizar fondos del banco
     } else {
       ToastsStore.error("El credito ha sido rechazado");
     }
@@ -86,7 +85,7 @@ const AddUser = () => {
       reason: 'aprobada'
     };
     createCredit(creditData);
-    dispatch({type: 'DECREMENT_BANK_AMOUNT', value: range}); // Actualizar fondos del banco
+    
   }
 
   const SetRange = (newRange: any) => {

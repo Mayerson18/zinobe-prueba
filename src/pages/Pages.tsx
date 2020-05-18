@@ -13,7 +13,7 @@ const Pages = () => {
             <Link style={{ textDecoration: 'none', color: 'white' }} to="/users"><h3> Usuarios <FaUser /> </h3></Link>
           </div>
           <div className="box-container">
-            <h3> Creditos <FaUser /> </h3>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/credits"><h3> Creditos <FaUser /> </h3></Link>
           </div>
         </div>
       </div>
