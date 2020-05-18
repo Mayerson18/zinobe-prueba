@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FaUser, FaTimes } from 'react-icons/fa';
+import { FaUser, FaTimes, FaPlus, FaList } from 'react-icons/fa';
 import ReactModal from "react-modal";
 import { useModal } from "react-modal-hook";
 import AddUser from "./addUser";
@@ -32,11 +32,11 @@ const Users = () => {
       <div className="container">
         <div className="pages-container">
           <div className="box-container" onClick={showModal}>
-            <h3> Crear Usuario <FaUser /> </h3>
+            <h3> Crear Usuario <FaPlus /> </h3>
           </div>
           
           <div className="box-container">
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/list-users"><h3> Lista de usuarios <FaUser /> </h3></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/list-users"><h3> Lista de usuarios <FaList /> </h3></Link>
           </div>
         </div>
       </div>

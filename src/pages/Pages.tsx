@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FaUser } from 'react-icons/fa';
+import { FaUser, FaCcMastercard } from 'react-icons/fa';
 import {
   Link
 } from "react-router-dom";
@@ -13,7 +13,7 @@ const Pages = () => {
             <Link style={{ textDecoration: 'none', color: 'white' }} to="/users"><h3> Usuarios <FaUser /> </h3></Link>
           </div>
           <div className="box-container">
-            <Link style={{ textDecoration: 'none', color: 'white' }} to="/credits"><h3> Creditos <FaUser /> </h3></Link>
+            <Link style={{ textDecoration: 'none', color: 'white' }} to="/credits"><h3> Creditos <FaCcMastercard /> </h3></Link>
           </div>
         </div>
       </div>
