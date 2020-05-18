@@ -7,6 +7,7 @@ import "react-input-range/lib/css/index.css";
 import {AMOUNT_MIN, AMOUNT_MAX} from '../../helpers/config';
 import {ToastsContainer, ToastsStore, ToastsContainerPosition} from 'react-toasts';
 import validNewCredit from '../../api/credits/validNewCredit';
+import validNewCreditPay from '../../api/credits/validNewCreditPay';
 import createCredit from '../../api/credits/createCredit';
 import addUser from '../../api/users/addUser';
 import getUser from '../../api/users/getUser';
@@ -34,7 +35,12 @@ const AddUser = () => {
         const resCredit = await validNewCredit(foundUser.data[0].id);
         const credits: [Credit] = resCredit.data;
         if (credits.length > 0) {
-          CreateCredit(foundUser.data[0].id, true);
+          const resCreditPay = await validNewCreditPay(foundUser.data[0].id);
+          if (resCreditPay.data.length > 0) {
+            ToastsStore.error("Debes pagar tus creditos para solicitar uno nuevo");
+          } else {
+            CreateCredit(foundUser.data[0], true);
+          }
         } else {
           const creditData: CreditData = {
             amount: range,
@@ -76,7 +82,7 @@ const AddUser = () => {
       ToastsStore.error("El credito ha sido rechazado");
     }
     const creditData: CreditData = {
-      amount: range,
+      amount: typeof range === 'string' ? parseInt(range): range,
       status: statusCredit,
       createdAt: new Date(),
       userId: user.id,

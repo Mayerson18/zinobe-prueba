@@ -9,7 +9,7 @@ import { useDispatch } from 'react-redux';
 
 const Credits = () => {
 
-    const [credits, setCredits] = React.useState<Credit[]>([]);
+    const [credits, setCredits] = React.useState<any[]>([]);
     const dispatch = useDispatch();
 
     const GetCredits = async () => {
@@ -59,6 +59,7 @@ const Credits = () => {
                 <thead>
                 <tr style={{color: 'white'}}>
                     <th>#</th>
+                    <th>nombre</th>
                     <th>Estado</th>
                     <th>Monto</th>
                     <th>Fecha</th>
@@ -67,9 +68,10 @@ const Credits = () => {
                 </thead>
                 <tbody style={{color: 'white'}}>
                     {
-                        credits.map((credit: Credit) => {
+                        credits.map((credit: any) => {
                         return (<tr key={credit.id} >
                             <th scope="row">{credit.id}</th>
+                            <th scope="row">{credit.user.name}</th>
                             <td>{credit.status ? 'aprobada' : 'denegada'}</td>
                             <td>{credit.amount}</td>
                             <td>{credit.createdAt}</td>
